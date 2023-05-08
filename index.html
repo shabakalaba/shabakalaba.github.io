@@ -33,8 +33,11 @@
 				<h1>Ad Management</h1>
 			</div>
 			<div class="col-auto">
-				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+				<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
 					Add New
+				</button> -->
+				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#setDefaultAd">
+					Set Default Ad
 				</button>
 			</div>
 		</div>
@@ -83,7 +86,7 @@
 		</div>
 
 		<!-- LIST VIEW: ALL ADS -->
-		<h2>Active Campaigns</h2>
+		<!-- <h2>Active Campaigns</h2>
 		<div class="row">
 			<div class="col-12">
 				<table class="table table-sm">
@@ -120,7 +123,7 @@
 					</tbody>
 				</table>
 			</div>
-		</div>
+		</div> -->
 		<!-- Create Modal -->
 		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-xl">
@@ -139,14 +142,14 @@
 										<input class="form-control" id="imgSidebar" type="file">
 									</div>
 								</div>
-								<div class="col-6">
+								<!-- <div class="col-6">
 									<div class="mb-3">
 										<label for="imgRow" class="form-label">Content Row</label>
 										<input class="form-control" id="imgRow" type="file">
 									</div>
-								</div>
+								</div> -->
 							</div>
-							<div class="row">
+							<!-- <div class="row">
 								<div class="col-6">
 									<div class="mb-3">
 										<label for="imgHalfRow" class="form-label">Content Half Row</label>
@@ -159,7 +162,7 @@
 										<input class="form-control" id="imgSquare" type="file">
 									</div>
 								</div>
-							</div>
+							</div> -->
 							<div class="row">
 								<div class="col-6">
 									<div class="mb-3">
@@ -267,11 +270,11 @@
 											Add Campaign
 										</button>
 									</div>
-									<div class="col-auto">
+									<!-- <div class="col-auto">
 										<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#setDefaultAd">
 											Set Default Ad
 										</button>
-									</div>
+									</div> -->
 								</div>
 								<hr>
 								Current Preview
@@ -300,22 +303,19 @@
 				</div>
 				<div class="modal-body">
 					<div class="row">
-						<div class="col-8">
+						<div class="col-12">
 							Insights Banner
 							<label for="insightsBanner"><img class="w-100" src="https://nsb-news.s3.ca-central-1.amazonaws.com/core/assets/insights/panthers_leafs_strip.png" /></label>
 							<input class="d-none" id="insightsBanner" type="file" />
-						</div>
-						<div class="col-4">
-							Sidebar
-							<label for="sideBarUpload"> <img class="w-100" src="https://nsb-news.s3.ca-central-1.amazonaws.com/core/assets/insights/panthers_leafs_offer.png" /></label>
-							<input class="d-none" id="sideBarUpload" type="file" />
-						</div>
-						<div class="col-12">
-							<h4>Set URLs</h4>
 							<div class="form-floating mb-3">
 								<input type="url" class="form-control" id="floatingInput" placeholder="Banner">
 								<label for="floatingInput">Banner</label>
 							</div>
+						</div>
+						<div class="col-12">
+							Sidebar<br>
+							<label for="sideBarUpload"> <img class="w-100" src="https://nsb-news.s3.ca-central-1.amazonaws.com/core/assets/insights/panthers_leafs_offer.png" /></label>
+							<input class="d-none" id="sideBarUpload" type="file" />
 							<div class="form-floating mb-3">
 								<input type="url" class="form-control" id="floatingInput1" placeholder="Side Bar">
 								<label for="floatingInput1">Side Bar</label>
